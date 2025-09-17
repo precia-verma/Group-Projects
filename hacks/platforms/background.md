@@ -3,7 +3,7 @@ layout: base
 title: Background with Object
 description: Use JavaScript to have an in motion background.
 sprite: images/platformer/sprites/redcarthatREALLYworks.png
-background: images/platformer/backgrounds/shopping-street.jpg
+background: images/platformer/backgrounds/street-with-stores.png
 permalink: /background
 ---
 
