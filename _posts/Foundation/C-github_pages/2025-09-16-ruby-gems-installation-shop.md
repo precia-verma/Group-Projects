@@ -2,7 +2,7 @@
 title: "Welcome to the Brew Shop! 🍺"
 layout: post
 date: 2025-09-16
-permalink: /homebrew-installation-shop/
+permalink: /ruby-gems-installation-shop/
 ---
 
 ## Welcome to the Gem Shop! ‧⊹'💎♦️*⁠.⁠✧
