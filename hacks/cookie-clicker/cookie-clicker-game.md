@@ -1,5 +1,5 @@
 ---
-layout: opencs
+layout: base
 title: Cookie Clicker Game
 permalink: /cookie-clicker-game/
 ---
