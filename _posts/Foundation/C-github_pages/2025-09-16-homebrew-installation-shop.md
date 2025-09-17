@@ -5,7 +5,7 @@ date: 2025-09-16
 permalink: /homebrew-installation-shop/
 ---
 
-# Welcome to the Brew Shop! 🍺
+## Welcome to the Brew Shop! 🍺
 
 ### If you're driving anything other than a MacOS car, then you can skip this pickup stop.
 
