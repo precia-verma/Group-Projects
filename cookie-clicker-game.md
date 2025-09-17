@@ -1,7 +1,9 @@
 ---
 layout: base
-title: Cookie Clicker Game
+title: Cookie Clicker Game (duplicate)
 permalink: /cookie-clicker-game/
+published: false
+note: This duplicate file is disabled; actual page is hacks/cookie-clicker/cookie-clicker-game.md
 ---
 
 <div class="grid grid-cols-4 gap-4 aspect-square">
@@ -55,4 +57,4 @@ permalink: /cookie-clicker-game/
 </div>
 
 <script src="https://cdn.tailwindcss.com"></script>
-<script src="/hacks/cookie-clicker/cookie-clicker-game.js"></script>
+<script src="{{site.baseurl}}/hacks/cookie-clicker/cookie-clicker-game.js"></script>
