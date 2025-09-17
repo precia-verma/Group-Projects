@@ -17,7 +17,7 @@ Your customer wants Homebrew, here’s how to get it:
 
 First, let's check if you already have Homebrew in your car. In a new terminal, type `brew --version`. If the command is not found, then you need to order Homebrew. 
 
-To do so, go to https://brew.sh/ and follow the instructions.
+To do so, go to `https://brew.sh/` and follow the instructions.
 
 On the website, it will tell you to run this code in your terminal:
 ```
