@@ -1,21 +1,14 @@
 ---
-title: "Homebrew Installation Shop"
+title: "Welcome to the Brew Shop! 🍺"
 layout: post
 date: 2025-09-16
 permalink: /homebrew-installation-shop/
 ---
 
----
-
-# Welcome to the Brew Shop! 🍺
-
----
-
 ### If you're driving anything other than a MacOS car, then you can skip this pickup stop.
 
----
+Your customer wants Homebrew, here’s how to get it:
 
-Your customer wants Homebrew, here's how to get it:
 First, let's check if you already have Homebrew in your car. In a new terminal, type `brew --version`. If the command is not found, then you need to order Homebrew. 
 
 To do so, go to https://brew.sh/ and follow the instructions.
