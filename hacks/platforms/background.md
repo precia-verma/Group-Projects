@@ -2,8 +2,8 @@
 layout: base
 title: Background with Object
 description: Use JavaScript to have an in motion background.
-sprite: images/platformer/sprites/brick1.png
-background: images/platformer/backgrounds/meatfactory.jpeg
+sprite: images/platformer/sprites/redcarthatREALLYworks.png
+background: images/platformer/backgrounds/midroad.jpg
 permalink: /background
 ---
 
@@ -76,19 +76,16 @@ permalink: /background
     class Player extends GameObject {
       constructor(image, gameWorld) {
         // Scale sprite to half its natural size and center it
-        const width = image.naturalWidth / 2;
-        const height = image.naturalHeight / 2;
+        const width = image.naturalWidth / 1.2;
+        const height = image.naturalHeight / 1.2;
         const x = (gameWorld.width - width) / 2;
-        const y = (gameWorld.height - height) / 2;
+        const y = (gameWorld.height - height) / 2 + 50;
         super(image, width, height, x, y);
         this.baseY = y;
         this.frame = 0;
       }
       // Animate player with a sine wave motion
-      update() {
-        this.y = this.baseY + Math.sin(this.frame * 0.05) * 20;
-        this.frame++;
-      }
+      
     }
 
     // Main game world class
