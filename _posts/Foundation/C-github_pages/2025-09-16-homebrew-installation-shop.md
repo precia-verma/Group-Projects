@@ -23,7 +23,7 @@ On the website, it will tell you to run this code in your terminal:
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
-You may need enter your password into terminal. Then, wait for your order to finish. Then, make sure to run this: (make sure to put the word `sudo` before pasting this code)
+You may need enter your password into terminal. Then, wait for your order to finish. Finally, make sure to run this: (make sure to put the word `sudo` before pasting this code)
 ```bash
 echo >> /Users/anshrathod/.zprofile
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' »> /Users/anshrathod/ •zprof
