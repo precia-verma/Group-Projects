@@ -7,7 +7,11 @@ permalink: /homebrew-installation-shop/
 
 ## Welcome to the Brew Shop! 🍺
 
+---
+
 ### If you're driving anything other than a MacOS car, then you can skip this pickup stop.
+
+---
 
 Your customer wants Homebrew, here’s how to get it:
 
