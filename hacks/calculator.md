@@ -1,5 +1,5 @@
 ---
-title: JS Calculator 
+title: JS Calculator
 comments: true
 hide: true
 layout: base
