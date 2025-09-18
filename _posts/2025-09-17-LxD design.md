@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: base
 title: "🌠 LxD Plan — Interstellar Edition"
 permalink: /lxd-plan
 description: "All of my LxD plan wrapped in a star-filled sky with a rocket cursor."
