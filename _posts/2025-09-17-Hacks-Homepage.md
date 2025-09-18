@@ -58,7 +58,7 @@ body {
 
 <div class="section">
   <h2>🚀 Hack 1: Cookie Clicker</h2>
-  <p>Track shooting stars in real time and map them across the galaxy.</p>
+  <p>Click the Cookie in order to get cookies to mkae ven more cookies! I have never said cookie that many time in a sensetnce beofore...</p>
   <div class="btn-wrap">
     <a class="cosmic-btn" href="https://precia-verma.github.io/Group-projects/cookie-clicker-game/" target="_blank">Live Game Site</a>
     <a class="cosmic-btn" href="https://precia-verma.github.io/Group-projects/cookie-clicker-blog" target="_blank">Blog</a>
@@ -67,7 +67,7 @@ body {
 
 <div class="section">
   <h2>🛰️ Hack 2: Calculator</h2>
-  <p>A space-themed chat app with real-time meteor emoji reactions.</p>
+  <p>A simple calcultor that you can use for daily bases</p>
   <div class="btn-wrap">
     <a class="cosmic-btn" href="https://precia-verma.github.io/Group-projects/calculator" target="_blank">Live Game Site</a>
     <a class="cosmic-btn" href="https://precia-verma.github.io/Group-projects/calculator-blog" target="_blank">Blog</a>
@@ -76,7 +76,7 @@ body {
 
 <div class="section">
   <h2>🌠 Hack 3: Snake Game</h2>
-  <p>Paint glowing nebula art using your cursor and cosmic particles.</p>
+  <p>Move the snake around and try to beat your highest score! Lets see what your high score is!</p>
   <div class="btn-wrap">
     <a class="cosmic-btn" href="https://precia-verma.github.io/Group-projects/snake" target="_blank">Live Game Site</a>
     <a class="cosmic-btn" href="https://github.com/precia-verma/Group-projects/issues/9" target="_blank">Blog</a>
@@ -85,7 +85,7 @@ body {
 
 <div class="section">
   <h2>🪐 Hack 4: Rock Paper Scissors</h2>
-  <p>Procedurally generate endless planets with unique atmospheres.</p>
+  <p>The inconic game of rock paper scissors has come into a website!</p>
   <div class="btn-wrap">
     <a class="cosmic-btn" href="https://example.com/hack4-demo" target="_blank">Live Game Site</a>
     <a class="cosmic-btn" href="https://github.com/you/hack4" target="_blank">Blog</a>
