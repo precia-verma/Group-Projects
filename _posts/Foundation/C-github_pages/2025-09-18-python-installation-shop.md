@@ -38,7 +38,7 @@ Python 3.13.7
 pip 25.2 from /opt/homebrew/lib/python3.13/site-packages/pip (python 3.13
 ```
 
-Congrats! You picked up your customer's python. Head onto the next button now!
+Congrats! You picked up your customer's python. Head onto the next button now! 🐍🐾
 
 # 🎉🎉
 
@@ -70,6 +70,5 @@ Python 3.13.7
 pip 25.2 from /opt/homebrew/lib/python3.13/site-packages/pip (python 3.13
 ```
 
-Congrats! You picked up your customer's python. Head onto the next button now!
-
+Congrats! You picked up your customer's python. Head onto the next button now! 🐍🐾
 # 🎉🎉
