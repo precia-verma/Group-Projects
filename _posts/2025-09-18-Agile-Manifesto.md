@@ -13,11 +13,11 @@ permalink: /agile-blogs/
     background: radial-gradient(ellipse at center, #0b0d26 0%, #000 100%);
     color: #f5f5f5;
     overflow-x: hidden;
-    cursor: none; /* hide default cursor so rocket rules */
+  /* cursor: none;  hide default cursor so rocket rules */
   }
 
   h1, h2, h3 {
-    text-align: center;
+    text-align: center;m
     text-shadow: 0 0 10px #6ddfff, 0 0 20px #6ddfff;
   }
 
@@ -37,16 +37,7 @@ permalink: /agile-blogs/
     50% { opacity: 1; }
   }
 
-  /* rocket cursor */
-  #rocket {
-    position: fixed;
-    width: 40px;
-    height: 40px;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    transition: transform 0.05s linear;
-    z-index: 9999;
-  }
+
 
   main {
     position: relative;
@@ -62,6 +53,7 @@ permalink: /agile-blogs/
 
 <!-- ====== 🌠 STARRY BACKGROUND SCRIPT ====== -->
 <script>
+document.addEventListener('DOMContentLoaded', function() {
   // Generate random stars
   for (let i = 0; i < 100; i++) {
     const star = document.createElement('div');
@@ -74,16 +66,8 @@ permalink: /agile-blogs/
     document.body.appendChild(star);
   }
 
-  // Rocket cursor movement
-  const rocket = document.createElement('img');
-  rocket.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Rocket_icon.svg/48px-Rocket_icon.svg.png';
-  rocket.id = 'rocket';
-  document.body.appendChild(rocket);
 
-  document.addEventListener('mousemove', (e) => {
-    // Slight offset so rocket is closer to pointer
-    rocket.style.transform = `translate(${e.clientX - 10}px, ${e.clientY - 10}px) rotate(-45deg)`;
-  });
+});
 </script>
 
 <!-- ====== 🚀 ACTUAL CONTENT ====== -->
