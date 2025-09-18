@@ -2,33 +2,63 @@
 title: "Welcome to the Brew Shop! 🍺"
 layout: post
 date: 2025-09-16
-permalink: /homebrew-installation-shop/
+permalink: /ruby-gems-installation-shop/
 ---
 
-## Welcome to the Brew Shop! 🍺
-
----
-
-### If you're driving anything other than a MacOS car, then you can skip this pickup stop.
+## Welcome to the Gem Shop! ‧⊹'💎♦️*⁠.⁠✧
 
 ---
 
-Your customer wants Homebrew, here’s how to get it:
+### If you're driving a Chromebook and/or a Kasm/Linux car, then these steps are for you:
+###### If you're driving a MacOS, your instructions are further down.
 
-First, let's check if you already have Homebrew in your car. In a new terminal, type `brew --version`. If the command is not found, then you need to order Homebrew. 
+---
 
-To do so, go to `https://brew.sh/` and follow the instructions.
+Your customer wants a nice shiny ruby gem for a proposal, here at the Gem Shop, you can pick it up for them! Here's how:
 
-On the website, it will tell you to run this code in your terminal:
+First, in your Kasm workspace, open a new terminal window. Then, run these commands:
+```bash 
+sudo apt update
+sudo apt install -y ruby-full
+gem install bundler
+# install any gem later with:
+# gem install <gem_name>
 ```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+Great! Now you have your ruby gem! But you need to make sure its a real gem. To do that, run these in your terminal:
 ```
-You may need enter your password into terminal. Then, wait for your order to finish. Then, make sure to run this: (make sure to put the word `sudo` before pasting this code)
+ruby -v
+gem -v
+bundler -v
+```
+If they're real gems, then you should be met with the ruby version number, the gem version number, and the bundler version number.
+
+Congrats! You picked up your customer's shiny ruby gem. Head onto the next button now!
+
+# 🎉🎉
+
+---
+
+### If you're driving a Chromebook and/or a Kasm/Linux car, then these steps are for you:
+
+---
+Your customer wants a nice shiny ruby gem for a proposal, here at the Gem Shop, you can pick it up for them! Here's how:
+
+First, in your MacOS workspace, open a new terminal window. Then, run these commands:
 ```bash
-echo >> /Users/anshrathod/.zprofile
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' »> /Users/anshrathod/ •zprof
-ile
-eval "$(/opt/homebrew/bin/brew shellenv)"
+echo 'export PATH="$(brew --prefix ruby)/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+
+
+gem install bundler
 ```
-Your order should be complete now! But first--take a sip to make sure it's ready for your customer! Run `brew --version` to make sure your Homebrew is correctly installed. If the output is `Homebrew (version number)` then your brew is perfect and ready for your customer. 
+Great! Now you have your ruby gem! But you need to make sure its a real gem. To do that, run these in your terminal:
+```
+ruby -v
+gem -v
+bundler -v
+```
+If they're real gems, then you should be met with the ruby version number, the gem version number, and the bundler version number.
+
+Congrats! You picked up your customer's shiny ruby gem. Head onto the next button now!
+
 # 🎉🎉

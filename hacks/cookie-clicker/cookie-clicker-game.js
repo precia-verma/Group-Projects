@@ -14,7 +14,9 @@ const cookie = {
     localStorage.setItem("cookies", this.cookies);
   },
   updateDisplay() {
-    cookieCountDisplay.innerHTML = this.cookies;
+    if (cookieCountDisplay) {
+      cookieCountDisplay.textContent = String(this.cookies);
+    }
   },
   fetchStoredCookies() {
     const storedCookies = Number(localStorage.getItem("cookies"));
@@ -492,10 +494,19 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Double cookies per click if Milk is owned
-cookieButton.addEventListener("click", () => {
-  let increment = hasMilk ? 2 * cookie.cookieMulti : 1 * cookie.cookieMulti;
+function onCookieClick() {
+  const multiplier = hasMilk ? 2 : 1;
+  const increment = multiplier * (cookie.cookieMulti || 1);
   cookie.addCookies(increment);
-});
+}
+if (cookieButton) {
+  cookieButton.addEventListener("click", onCookieClick, { once: false });
+} else {
+  document.addEventListener("DOMContentLoaded", () => {
+    const btn = document.getElementById("cookie");
+    btn?.addEventListener("click", onCookieClick, { once: false });
+  });
+}
 
 shop.addItemForSale(grandma);
 shop.addItemForSale(factory);
@@ -503,16 +514,4 @@ shop.addItemForSale(mangotemple);
 shop.addItemForSale(bank);
 gameLoop.fetchSavedData();
 cookie.fetchStoredCookies();
-cookieButton.addEventListener("click", () => {
-  console.log("COOKIE");
-  if (cookie.cookieMulti) {
-    cookie.addCookies(1 * cookie.cookieMulti);
-  } else {
-    cookie.addCookies(1);
-  }
-  console.log(cookie.cookies);
-  gameLoop.getAmount("Grandma");
-  gameLoop.getAmount("Factory");
-  gameLoop.getAmount("MangoTemple");
-  gameLoop.getAmount("Bank");
-});
+// removed duplicate click handler
