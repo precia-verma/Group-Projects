@@ -9,6 +9,15 @@ permalink: /background
 
 <canvas id="world"></canvas>
 
+<!-- Controls: speed slider -->
+<div id="controls" style="position:fixed; top:10px; left:10px; background: rgba(255,255,255,0.9); padding:6px 8px; border-radius:6px; z-index:1000; font-family: sans-serif; font-size:14px;">
+  <label style="display:block; margin-bottom:4px;">Speed: <span id="speedValue">6</span></label>
+  <input id="speedRange" type="range" min="1" max="30" value="6" />
+  <div id="speedDesc" style="margin-top:6px; font-size:12px; color:#333; max-width:220px;">
+    Play around with the speed of the car 😁
+  </div>
+</div>
+
 <script>
   // Get the canvas and its drawing context
   const canvas = document.getElementById("world");
@@ -173,6 +182,18 @@ permalink: /background
 
     // Create and start the game world
     const world = new GameWorld(backgroundImg, spriteImg);
+    // Initialize player speed from the slider value
+    const speedRange = document.getElementById('speedRange');
+    const speedValue = document.getElementById('speedValue');
+    // set initial speed
+    world.player.speed = Number(speedRange.value);
+    speedValue.textContent = speedRange.value;
+    // update speed live when slider changes
+    speedRange.addEventListener('input', (e) => {
+      const v = Number(e.target.value);
+      world.player.speed = v;
+      speedValue.textContent = v;
+    });
     // Start the game loop
     world.start();
   }
