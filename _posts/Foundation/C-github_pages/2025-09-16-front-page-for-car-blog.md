@@ -1,21 +1,28 @@
 ---
-title: "Welcome to the Brew Shop! 🍺"
+title: "Front Page for Car Blog"
 layout: post
 date: 2025-09-16
-permalink: /homebrew-installation-shop/
+permalink: /front-page/
 ---
 
-## Welcome to the Brew Shop! 🍺
-
----
-
-### If you're driving anything other than a MacOS car, then you can skip this pickup stop.
+## You've Been Hired!
 
 ---
 
-Your customer wants Homebrew, here’s how to get it:
+Welcome to the new CSSE pickup and delivery service! You've been hired to pick up different items for your customer and deliver it to them using your terminal. 
 
-First, let's check if you already have Homebrew in your car. In a new terminal, type `brew --version`. If the command is not found, then you need to order Homebrew. 
+---
+
+Your job is to make sure you first have a terminal on your machine. If you're driving a Kasm/Linux car, it should be in the top menu. If you're driving a MacOS car, it should already be installed. You can access it in your finder or apps. 
+
+- **Remember:** If you're driving a MacOS car, the instructions for a Kasm/Linux car will not work for you, and is guranteed to cause errors, and vice versa. Make sure to follow the instructions for your specific machine. 
+
+---
+
+Now--your customer has created a list of items to pickup. You will obtain these items and then add them into your terminal:
+1. 1 Homebrew 🍺
+2. Shiny Ruby Gems 💎♦️
+3. 1 Python Snake 🐍
 
 To do so, go to `https://brew.sh/` and follow the instructions.
 
