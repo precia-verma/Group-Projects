@@ -76,18 +76,21 @@ h1, h2, h3 {
 
 /* ----- Rocket Cursor Follower ----- */
 #rocket {
-  position: fixed;
+  position: absolute;
   width: 60px;
   height: 60px;
   pointer-events: none;
-  transform: translate(-50%, -50%);
+  left: 50vw;
+  top: 50vh;
   z-index: 9999;
-  transition: transform 0.1s linear;
 }
 </style>
 
-<!-- ====== Rocket Image (you can swap with your own) ====== -->
-<img id="rocket" src="https://raw.githubusercontent.com/andrewnakas/space-assets/main/rocket.png" alt="rocket" />
+<!-- ====== Inline Rocket SVG (no image needed) ====== -->
+<svg id="rocket" viewBox="0 0 64 64" style="position:absolute;width:60px;height:60px;pointer-events:none;left:50vw;top:50vh;z-index:9999;">
+  <path fill="#ccc" d="M32 0C24 10 22 24 24 38l-6 8 8-4 4 10 4-10 8 4-6-8c2-14 0-28-8-38z"/>
+  <path fill="orange" d="M28 56l4 8 4-8z"/>
+</svg>
 
 <!-- === JS === -->
 <script>
