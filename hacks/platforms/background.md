@@ -90,7 +90,10 @@ permalink: /background
   // Start the player a bit left of center. Change startOffset to move further left/right.
   const startOffset = 500; // pixels to shift left from center (increase to move further left)
   const x = Math.max(0, (gameWorld.width - width) / 2 - startOffset);
-        const y = (gameWorld.height - height) / 2 + 50;
+        // Shift the player down from vertical center. Increase startYOffset to move further down.
+        const startYOffset = 120; // pixels to shift down from the computed center+50
+        const yBase = (gameWorld.height - height) / 2 + 50;
+        const y = Math.min(gameWorld.height - height, yBase + startYOffset);
         super(image, width, height, x, y);
         this.baseY = y;
         this.frame = 0;
