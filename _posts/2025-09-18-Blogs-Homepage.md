@@ -1,6 +1,6 @@
 ---
 layout: base
-title: Blogs 
+title: Blogs
 permalink: /homepage-blogs/
 ---
 
@@ -124,7 +124,7 @@ permalink: /homepage-blogs/
 </p>
 
 <div class="button-container">
-  <a class="space-btn" href="https://example.com/blog1" target="_blank">🚀 Blog 1</a>
+  <a class="space-btn" href="https://precia-verma.github.io/Group-projects/agile-blogs/" target="_blank">🚀 Agile Manifesto</a>
   <a class="space-btn" href="https://example.com/blog2" target="_blank">🪐 Blog 2</a>
   <a class="space-btn" href="https://example.com/blog3" target="_blank">☄️ Blog 3</a>
   <a class="space-btn" href="https://example.com/blog4" target="_blank">🌌 Blog 4</a>
