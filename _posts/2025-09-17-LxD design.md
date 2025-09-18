@@ -119,6 +119,11 @@ let targetY = window.innerHeight / 2;
 let currentX = targetX;
 let currentY = targetY;
 
+document.addEventListener('mousemove', function(e) {
+  targetX = e.clientX;
+  targetY = e.clientY;
+});
+
 function animateRocket() {
   // Lerp closer to cursor (higher factor = closer)
   currentX += (targetX - currentX) * 0.25;
