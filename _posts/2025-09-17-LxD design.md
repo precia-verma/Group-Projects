@@ -108,22 +108,16 @@ h1, h2, h3 {
 </svg>
 
 <!-- === JS === -->
-document.addEventListener('mousemove', function(e) {
-</script>
 
 <!-- Place canvas and script at the end of the body for reliability -->
 <script>
 // Make rocket cursor follow mouse smoothly (closer, but not instant)
+
 const rocket = document.getElementById('rocket');
 let targetX = window.innerWidth / 2;
 let targetY = window.innerHeight / 2;
 let currentX = targetX;
 let currentY = targetY;
-
-document.addEventListener('mousemove', function(e) {
-  targetX = e.clientX;
-  targetY = e.clientY;
-});
 
 function animateRocket() {
   // Lerp closer to cursor (higher factor = closer)
