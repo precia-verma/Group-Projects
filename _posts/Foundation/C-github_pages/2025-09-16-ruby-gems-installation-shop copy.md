@@ -38,7 +38,7 @@ Congrats! You picked up your customer's shiny ruby gem. Head onto the next butto
 
 ---
 
-### If you're driving a Chromebook and/or a Kasm/Linux car, then these steps are for you:
+### If you're driving a MacOS car, then these steps are for you:
 
 ---
 Your customer wants a nice shiny ruby gem for a proposal, here at the Gem Shop, you can pick it up for them! Here's how:
