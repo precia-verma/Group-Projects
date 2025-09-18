@@ -87,7 +87,6 @@ permalink: /agile-blogs/
 </script>
 
 <!-- ====== 🚀 ACTUAL CONTENT ====== -->
-<main>
 # 🚀 Agile Manifesto — Cosmic TL;DR
 
 The **Agile Manifesto** is the OG playbook for teams who value *humans, learning, and adaptability* over heavyweight process.  
@@ -154,5 +153,4 @@ It’s not just for software devs—anyone can use Agile to boost teamwork and g
 
 > Agile wasn’t just theory—it was our launchpad. We aimed for the stars and actually got there. 🌟
 
-*Source: [Wrike Agile Manifesto Guide](https://www.wrike.com/agile-guide/agile-manifesto/)*  
-</main>
+*Source: [Wrike Agile Manifesto Guide](https://www.wrike.com/agile-guide/agile-manifesto/)*
