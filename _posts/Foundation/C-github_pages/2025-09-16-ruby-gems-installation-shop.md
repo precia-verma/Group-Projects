@@ -1,5 +1,5 @@
 ---
-title: "Welcome to the Brew Shop! 🍺"
+title: "Welcome to the Gem Shop! ‧⊹'💎♦️*⁠.⁠✧"
 layout: post
 date: 2025-09-16
 permalink: /ruby-gems-installation-shop/
