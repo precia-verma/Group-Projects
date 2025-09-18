@@ -1,11 +1,10 @@
 ---
-layout: base
+layout: opencs
 title: Snake Game
-permalink: /snake/
+permalink: /snake
 ---
 
 <style>
-
     body{
     }
     .wrap{
@@ -14,10 +13,17 @@ permalink: /snake/
     }
 
     canvas{
-        display: none;
-        border-style: solid;
-        border-width: 10px;
-        border-color: #FFFFFF;
+        border: 3px solid #444444;
+        margin: 20px auto;
+        display: block;
+        width: 320px;
+        height: 320px;
+        background-color: #2F4F2F;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+    canvas.hidden{
+        display: none !important;
     }
     canvas:focus{
         outline: none;
@@ -66,12 +72,49 @@ permalink: /snake/
         background-color: #FFF;
         color: #000;
     }
+
+    /* Special styling for extreme speed modes */
+    #speed0:checked + label{
+        background-color: #90EE90;
+        color: #000;
+    }
+
+    #speed4:checked + label{
+        background-color: #FF4500;
+        color: #FFF;
+        animation: pulse 1s infinite;
+    }
+
+    /* Scoreboard animations */
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+        100% { transform: scale(1); }
+    }
+
+    @keyframes scoreUpdate {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.2); color: #FFD700; }
+        100% { transform: scale(1); }
+    }
+
+    .score-update {
+        animation: scoreUpdate 0.3s ease-in-out;
+    }
 </style>
 
 <h2>Snake</h2>
 <div class="container">
-    <p class="fs-4">Score: <span id="score_value">0</span></p>
-
+    <!-- Simplified Scoreboard -->
+    <div style="text-align: center; margin: 20px 0; padding: 10px; background: #333; color: white; border-radius: 10px;">
+        <span>Score: <span id="score_value">0</span></span> | 
+        <span>Length: <span id="snake_length">1</span></span> | 
+        <span>Level: <span id="game_level">1</span></span> | 
+        <span>Best: <span id="high_score">0</span></span>
+        <div id="achievement_banner" style="margin-top: 10px; color: gold; display: none;">
+            🎉 <span id="achievement_text"></span> 🎉
+        </div>
+    </div>
     <div class="container bg-secondary" style="text-align:center;">
         <!-- Main Menu -->
         <div id="menu" class="py-4 text-light">
@@ -93,12 +136,16 @@ permalink: /snake/
             <a id="new_game2" class="link-alert">new game</a>
             <br>
             <p>Speed:
-                <input id="speed1" type="radio" name="speed" value="120" checked/>
+                <input id="speed0" type="radio" name="speed" value="300"/>
+                <label for="speed0">Grandma</label>
+                <input id="speed1" type="radio" name="speed" value="120"/>
                 <label for="speed1">Slow</label>
-                <input id="speed2" type="radio" name="speed" value="75"/>
+                <input id="speed2" type="radio" name="speed" value="75" checked/>
                 <label for="speed2">Normal</label>
                 <input id="speed3" type="radio" name="speed" value="35"/>
                 <label for="speed3">Fast</label>
+                <input id="speed4" type="radio" name="speed" value="10"/>
+                <label for="speed4">Impossible</label>
             </p>
             <p>Wall:
                 <input id="wallon" type="radio" name="wall" value="1" checked/>
@@ -121,6 +168,11 @@ permalink: /snake/
         const SCREEN_SNAKE = 0;
         const screen_snake = document.getElementById("snake");
         const ele_score = document.getElementById("score_value");
+        const ele_snake_length = document.getElementById("snake_length");
+        const ele_game_level = document.getElementById("game_level");
+        const ele_high_score = document.getElementById("high_score");
+        const ele_achievement_banner = document.getElementById("achievement_banner");
+        const ele_achievement_text = document.getElementById("achievement_text");
         const speed_setting = document.getElementsByName("speed");
         const wall_setting = document.getElementsByName("wall");
         // HTML Screen IDs (div)
@@ -143,30 +195,38 @@ permalink: /snake/
         let snake_speed;
         let food = {x: 0, y: 0};
         let score;
+        let game_level;
+        let high_score = localStorage.getItem('snake_high_score') || 0;
         let wall;
         /* Display Control */
         /////////////////////////////////////////////////////////////
-        // 0 for the game
-        // 1 for the main menu
-        // 2 for the settings screen
-        // 3 for the game over screen
+        // SCREEN_SNAKE = 0 for the game
+        // SCREEN_MENU = -1 for the main menu
+        // SCREEN_GAME_OVER = 1 for the game over screen
+        // SCREEN_SETTING = 2 for the settings screen
         let showScreen = function(screen_opt){
             SCREEN = screen_opt;
             switch(screen_opt){
                 case SCREEN_SNAKE:
-                    screen_snake.style.display = "block";
+                    screen_snake.classList.remove("hidden");
                     screen_menu.style.display = "none";
                     screen_setting.style.display = "none";
                     screen_game_over.style.display = "none";
                     break;
+                case SCREEN_MENU:
+                    screen_snake.classList.add("hidden");
+                    screen_menu.style.display = "block";
+                    screen_setting.style.display = "none";
+                    screen_game_over.style.display = "none";
+                    break;
                 case SCREEN_GAME_OVER:
-                    screen_snake.style.display = "block";
+                    screen_snake.classList.remove("hidden");
                     screen_menu.style.display = "none";
                     screen_setting.style.display = "none";
                     screen_game_over.style.display = "block";
                     break;
                 case SCREEN_SETTING:
-                    screen_snake.style.display = "none";
+                    screen_snake.classList.add("hidden");
                     screen_menu.style.display = "none";
                     screen_setting.style.display = "block";
                     screen_game_over.style.display = "none";
@@ -176,6 +236,12 @@ permalink: /snake/
         /* Actions and Events  */
         /////////////////////////////////////////////////////////////
         window.onload = function(){
+            // Initialize canvas as hidden
+            screen_snake.classList.add("hidden");
+            
+            // Initialize high score display
+            ele_high_score.innerHTML = String(high_score);
+            
             // HTML Events to Functions
             button_new_game.onclick = function(){newGame();};
             button_new_game1.onclick = function(){newGame();};
@@ -183,7 +249,7 @@ permalink: /snake/
             button_setting_menu.onclick = function(){showScreen(SCREEN_SETTING);};
             button_setting_menu1.onclick = function(){showScreen(SCREEN_SETTING);};
             // speed
-            setSnakeSpeed(150);
+            setSnakeSpeed(75); // Set to match the default "Normal" radio button
             for(let i = 0; i < speed_setting.length; i++){
                 speed_setting[i].addEventListener("click", function(){
                     for(let i = 0; i < speed_setting.length; i++){
@@ -261,64 +327,91 @@ permalink: /snake/
             // Snake eats food checker
             if(checkBlock(snake[0].x, snake[0].y, food.x, food.y)){
                 snake[snake.length] = {x: snake[0].x, y: snake[0].y};
-                altScore(++score);
+                updateStats(++score);
                 addFood();
-                activeDot(food.x, food.y);
             }
-            // Repaint canvas
-            ctx.beginPath();
-            ctx.fillStyle = "royalblue";
-            ctx.fillRect(0, 0, canvas.width, canvas.height);
-            // Paint snake
-            for(let i = 0; i < snake.length; i++){
-                activeDot(snake[i].x, snake[i].y);
-            }
-            // Paint food
-            activeDot(food.x, food.y);
-            // Debug
-            //document.getElementById("debug").innerHTML = snake_dir + " " + snake_next_dir + " " + snake[0].x + " " + snake[0].y;
-            // Recursive call after speed delay, déjà vu
+            
+            // Redraw everything
+            drawGame();
+            
+            // Recursive call after speed delay
             setTimeout(mainLoop, snake_speed);
         }
         /* New Game setup */
         /////////////////////////////////////////////////////////////
         let newGame = function(){
-            // snake game screen
+            console.log("newGame called");
+            
+            // Show canvas
             showScreen(SCREEN_SNAKE);
             screen_snake.focus();
-            // game score to zero
-            score = 0;
-            altScore(score);
-            // initial snake
+            
+            // Initialize snake FIRST
             snake = [];
-            snake.push({x: 0, y: 15});
+            snake.push({x: 16, y: 16}); // Center position
+            snake_dir = 1; // Moving right
             snake_next_dir = 1;
-            // food on canvas
-            addFood();
-            // activate canvas event
+            
+            // Then initialize game state
+            score = 0;
+            game_level = 1;
+            updateStats(score); // Now snake exists
+            
+            // Initial food
+            food = {x: 20, y: 20};
+            
+            // Draw initial game state
+            drawGame();
+            
+            // Set up controls
             canvas.onkeydown = function(evt) {
                 changeDir(evt.keyCode);
             }
-            mainLoop();
+            
+            // Set speed
+            if (!snake_speed) {
+                setSnakeSpeed(75);
+            }
+            
+            // Start the main game loop
+            setTimeout(mainLoop, snake_speed);
+            
+            console.log("newGame complete - game loop started");
+        }
+        
+        let drawGame = function(){
+            // Clear canvas
+            ctx.fillStyle = "#2F4F2F";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            // Draw snake
+            ctx.fillStyle = "#00FF00";
+            for(let i = 0; i < snake.length; i++){
+                activeDot(snake[i].x, snake[i].y);
+            }
+            
+            // Draw food
+            ctx.fillStyle = "#FF0000";
+            activeDot(food.x, food.y);
         }
         /* Key Inputs and Actions */
         /////////////////////////////////////////////////////////////
         let changeDir = function(key){
             // test key and switch direction
             switch(key) {
-                case 37:    // left arrow
+                case 65:    // 'a' key (left)
                     if (snake_dir !== 1)    // not right
                         snake_next_dir = 3; // then switch left
                     break;
-                case 38:    // up arrow
+                case 87:    // 'w' key (up)
                     if (snake_dir !== 2)    // not down
                         snake_next_dir = 0; // then switch up
                     break;
-                case 39:    // right arrow
+                case 68:    // 'd' key (right)
                     if (snake_dir !== 3)    // not left
                         snake_next_dir = 1; // then switch right
                     break;
-                case 40:    // down arrow
+                case 83:    // 's' key (down)
                     if (snake_dir !== 0)    // not up
                         snake_next_dir = 2; // then switch down
                     break;
@@ -326,9 +419,24 @@ permalink: /snake/
         }
         /* Dot for Food or Snake part */
         /////////////////////////////////////////////////////////////
-        let activeDot = function(x, y){
-            ctx.fillStyle = "#FFFFFF";
-            ctx.fillRect(x * BLOCK, y * BLOCK, BLOCK, BLOCK);
+        let activeDot = function(x, y, type = "snake"){
+            let pixelX = x * BLOCK;
+            let pixelY = y * BLOCK;
+            
+            if (type === "food") {
+                // Draw food as a red circle (apple-like)
+                ctx.fillStyle = "#FF0000";
+                ctx.fillRect(pixelX, pixelY, BLOCK, BLOCK);
+                ctx.fillStyle = "#FFFF00";
+                ctx.fillRect(pixelX + 2, pixelY + 2, BLOCK - 4, BLOCK - 4);
+            } else {
+                // Draw snake segments as green squares
+                ctx.fillStyle = "#00AA00";
+                ctx.fillRect(pixelX, pixelY, BLOCK, BLOCK);
+                // Add a lighter green border for 3D effect
+                ctx.fillStyle = "#00FF00";
+                ctx.fillRect(pixelX + 1, pixelY + 1, BLOCK - 2, BLOCK - 2);
+            }
         }
         /* Random food placement */
         /////////////////////////////////////////////////////////////
@@ -346,16 +454,59 @@ permalink: /snake/
         let checkBlock = function(x, y, _x, _y){
             return (x === _x && y === _y);
         }
-        /* Update Score */
+        /* Update Score and Stats */
         /////////////////////////////////////////////////////////////
-        let altScore = function(score_val){
+        let updateStats = function(score_val){
+            // Update score with animation
+            ele_score.classList.add('score-update');
+            setTimeout(() => ele_score.classList.remove('score-update'), 300);
             ele_score.innerHTML = String(score_val);
+            
+            // Update snake length
+            if (snake && snake.length !== undefined) {
+                ele_snake_length.innerHTML = String(snake.length);
+            } else {
+                ele_snake_length.innerHTML = "0";
+            }
+            
+            // Calculate and update level (every 5 points = new level)
+            game_level = Math.floor(score_val / 5) + 1;
+            ele_game_level.innerHTML = String(game_level);
+            
+            // Update high score
+            if (score_val > high_score) {
+                high_score = score_val;
+                localStorage.setItem('snake_high_score', high_score);
+                ele_high_score.innerHTML = String(high_score);
+                showAchievement("NEW HIGH SCORE!");
+            } else {
+                ele_high_score.innerHTML = String(high_score);
+            }
+            
+            // Check for achievements
+            if (score_val > 0 && score_val % 10 === 0) {
+                showAchievement(`Level ${game_level} Reached!`);
+            } else if (snake.length >= 20) {
+                showAchievement("Snake Master!");
+            } else if (snake.length >= 10) {
+                showAchievement("Getting Long!");
+            }
+        }
+        
+        let showAchievement = function(text) {
+            ele_achievement_text.innerHTML = text;
+            ele_achievement_banner.style.display = 'block';
+            setTimeout(() => {
+                ele_achievement_banner.style.display = 'none';
+            }, 3000);
         }
         /////////////////////////////////////////////////////////////
         // Change the snake speed...
-        // 150 = slow
-        // 100 = normal
-        // 50 = fast
+        // 300 = grandma mode (very slow)
+        // 120 = slow (default)
+        // 75 = normal
+        // 35 = fast
+        // 10 = impossible mode (extremely fast)
         let setSnakeSpeed = function(speed_value){
             snake_speed = speed_value;
         }
