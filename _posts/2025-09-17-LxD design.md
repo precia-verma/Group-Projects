@@ -119,7 +119,7 @@ animateRocket();
 
 # 🌌 Mission Control — LxD Plan
 
-Ready for launch, **Captain Pre**! This page charts every stop on the LxD journey.
+Ready for launch! This page charts every stop on the LxD journey.
 
 ---
 
