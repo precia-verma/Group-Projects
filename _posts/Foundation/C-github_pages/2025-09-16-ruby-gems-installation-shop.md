@@ -1,8 +1,8 @@
 ---
-title: "Welcome to the Gem Shop! ‧⊹'💎♦️*⁠.⁠✧"
+title: "Welcome to the Pet Shop! 🐍🐾"
 layout: post
 date: 2025-09-16
-permalink: /ruby-gems-installation-shop/
+permalink: /python-installation-shop/
 ---
 
 ## Welcome to the Gem Shop! ‧⊹'💎♦️*⁠.⁠✧
