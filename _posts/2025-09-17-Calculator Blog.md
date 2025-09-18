@@ -398,6 +398,6 @@ Buying Milk gives a sweet boost: it **doubles cookies per click** and makes the 
 ---
 
 ## 🎮 Play the Game
-👉 **[Cookie Clicker Game Live Site](https://precia-verma.github.io/Group-projects/calculator)**  
+👉 **[Calculator Live Site](https://precia-verma.github.io/Group-projects/calculator)**  
 
 ---
