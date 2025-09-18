@@ -16,6 +16,17 @@ body {
   overflow-x: hidden;
 }
 
+/* Twinkling stars canvas overlay */
+#star-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: -1;
+}
+
 /* create layers of twinkling stars */
 body::before, body::after {
   content: "";
@@ -86,6 +97,10 @@ h1, h2, h3 {
 }
 </style>
 
+
+<!-- Twinkling Stars Canvas (placed at end of body for reliability) -->
+
+
 <!-- ====== Inline Rocket SVG (no image needed) ====== -->
 <svg id="rocket" viewBox="0 0 64 64" style="position:absolute;width:60px;height:60px;pointer-events:none;left:50vw;top:50vh;z-index:9999;">
   <path fill="#ccc" d="M32 0C24 10 22 24 24 38l-6 8 8-4 4 10 4-10 8 4-6-8c2-14 0-28-8-38z"/>
@@ -93,6 +108,10 @@ h1, h2, h3 {
 </svg>
 
 <!-- === JS === -->
+document.addEventListener('mousemove', function(e) {
+</script>
+
+<!-- Place canvas and script at the end of the body for reliability -->
 <script>
 // Make rocket cursor follow mouse smoothly (closer, but not instant)
 const rocket = document.getElementById('rocket');
@@ -115,6 +134,67 @@ function animateRocket() {
   requestAnimationFrame(animateRocket);
 }
 animateRocket();
+
+// Twinkling stars canvas animation
+window.addEventListener('DOMContentLoaded', function() {
+  // Create and insert the canvas at the end of the body
+  let starCanvas = document.createElement('canvas');
+  starCanvas.id = 'star-canvas';
+  document.body.appendChild(starCanvas);
+  const ctx = starCanvas.getContext('2d');
+  let stars = [];
+  const STAR_COUNT = 120;
+  function resizeCanvas() {
+    starCanvas.width = window.innerWidth;
+    starCanvas.height = window.innerHeight;
+    starCanvas.style.width = '100vw';
+    starCanvas.style.height = '100vh';
+  }
+  resizeCanvas();
+  window.addEventListener('resize', () => {
+    resizeCanvas();
+    createStars();
+  });
+
+  function randomBetween(a, b) {
+    return a + Math.random() * (b - a);
+  }
+
+  function createStars() {
+    stars = [];
+    for (let i = 0; i < STAR_COUNT; i++) {
+      stars.push({
+        x: Math.random() * starCanvas.width,
+        y: Math.random() * starCanvas.height,
+        r: randomBetween(0.5, 1.7),
+        baseAlpha: randomBetween(0.4, 1),
+        twinkleSpeed: randomBetween(0.005, 0.025),
+        twinklePhase: Math.random() * Math.PI * 2
+      });
+    }
+  }
+  createStars();
+
+  function drawStars() {
+    ctx.clearRect(0, 0, starCanvas.width, starCanvas.height);
+    let t = Date.now() * 0.002;
+    for (let star of stars) {
+      let twinkle = Math.sin(t * 2 + star.twinklePhase) * 0.5 + 0.5;
+      let alpha = star.baseAlpha * (0.7 + 0.6 * twinkle);
+      ctx.globalAlpha = alpha;
+      ctx.beginPath();
+      ctx.arc(star.x, star.y, star.r, 0, Math.PI * 2);
+      ctx.fillStyle = '#fff';
+      ctx.shadowColor = '#a8d8ff';
+      ctx.shadowBlur = 8;
+      ctx.fill();
+      ctx.shadowBlur = 0;
+    }
+    ctx.globalAlpha = 1;
+    requestAnimationFrame(drawStars);
+  }
+  drawStars();
+});
 </script>
 
 # 🌌 Mission Control — LxD Plan
