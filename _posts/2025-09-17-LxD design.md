@@ -250,6 +250,26 @@ Apply everything: custom nav, JS in notebooks, Utterances comments—turn theory
 
 ---
 
+## 🚗 Our LxD Design Process: Plan A, Plan B, and Teamwork
+
+For our LxD (Learning Experience Design) project, we focused on planning, creativity, and collaboration:
+
+- **Plan A & Plan B:**
+  - We always made a primary plan (Plan A) and a backup plan (Plan B) to stay flexible and ready for any challenges.
+
+- **Background Animation Hack:**
+  - Using the `background.md` hack, we created a scene with a car passing by on a street. Above the animation, we placed different buttons to represent the steps of an LxD designer. Each button highlights a key phase, making the process interactive and visual.
+
+- **Tracking Our Work:**
+  - To stay organized, we documented everything in multiple blogs and GitHub issues. This helped us keep track of progress, ideas, and feedback.
+
+- **Team Roles:**
+  - We assigned one Scrum Master to lead the process, one Scrum Assistant to help coordinate, and the rest of the team as dedicated workers. This structure kept our workflow smooth and everyone engaged.
+
+This approach helped us visualize the LxD journey, adapt to changes, and work efficiently as a team!
+
+---
+
 ### 🌟 Launch Checklist
 1. Fork/clone the repo.  
 2. Drop this file in as `index.md`.  
