@@ -125,7 +125,13 @@ permalink: /homepage-blogs/
 
 <div class="button-container">
   <a class="space-btn" href="https://precia-verma.github.io/Group-projects/agile-blogs/" target="_blank">🚀 Agile Manifesto</a>
-  <a class="space-btn" href="https://example.com/blog2" target="_blank">🪐 Blog 2</a>
-  <a class="space-btn" href="https://example.com/blog3" target="_blank">☄️ Blog 3</a>
+  <a class="space-btn" href="https://precia-verma.github.io/Group-projects/ruby-gems-installation-shop/" target="_blank">🪐 Gem Shop</a>
+  <a class="space-btn" href="https://precia-verma.github.io/Group-projects/python-installation-shop/" target="_blank">☄️ Pet Shop</a>
+  <a class="space-btn" href="https://precia-verma.github.io/Group-projects/homebrew-installation-shop/" target="_blank">🛰️ Brew Shop</a>
+  <a class="space-btn" href="https://precia-verma.github.io/Group-projects/trouble-blogs/" target="_blank">🧑‍🚀 Trouble-Shooting Guide</a>
+  <a class="space-btn" href="https://precia-verma.github.io/Group-projects/final-group-review/" target="_blank">🌟 Final Group Review</a>
+  <a class="space-btn" href="https://precia-verma.github.io/Group-projects/blogs-archive/" target="_blank">🪐 Blogs Archive</a>
+  <a class="space-btn" href="https://precia-verma.github.io/Group-projects/fun-space/" target="_blank">🎮 Fun Space</a>
+  <a class="space-btn" href="https://precia-verma.github.io/Group-projects/resources/" target="_blank">📚 Resources</a>
   <a class="space-btn" href="https://example.com/blog4" target="_blank">🌌 Blog 4</a>
 </div>
