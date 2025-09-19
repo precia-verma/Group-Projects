@@ -15,8 +15,8 @@ permalink: /homebrew-installation-shop/
 #frontpage-card p{color:#d9f3f4;font-size:1.01rem;line-height:1.55}
 #frontpage-card ul, #frontpage-card ol{color:#d9f3f4;margin-left:1.1rem}
 #frontpage-card code, #frontpage-card pre{background:#02242b;color:#e6fbff;padding:10px;border-radius:8px;display:block;overflow:auto}
-.cta-btn{display:inline-block;padding:14px 20px;background:linear-gradient(90deg,#ff7a59,#ff3b6a);color:#fff;border-radius:999px;font-weight:800;text-decoration:none;box-shadow:0 10px 30px rgba(255,59,106,0.22);transition:transform .18s ease,box-shadow .18s ease}
-.cta-btn:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(255,59,106,0.18)}
+.cta-btn{display:inline-block;padding:14px 20px;background:linear-gradient(90deg,#5b8a72,#78b39a);color:#ffffff !important;border-radius:999px;font-weight:800;text-decoration:none;box-shadow:0 8px 18px rgba(0,0,0,0.06);transition:transform .18s ease,box-shadow .18s ease}
+.cta-btn:hover{transform:translateY(-2px);box-shadow:0 12px 22px rgba(0,0,0,0.08)}
 details{background:linear-gradient(90deg,#0b2a2a,#042737);padding:10px;border-radius:10px;margin:8px 0}
 summary{cursor:pointer;font-weight:700;color:#bfeef0}
 @media (max-width:640px){#frontpage-card{padding:16px}#frontpage-card h2{font-size:1.5rem}}
@@ -53,3 +53,7 @@ Your order should be complete now! But first--take a sip to make sure it's ready
 # 🎉🎉
 
 </div>
+
+<p style="text-align:center;margin:18px 0 32px;">
+	<a href="https://precia-verma.github.io/Group-projects/background" target="_blank" rel="noopener" class="cta-btn">Start Job Now!</a>
+</p>
