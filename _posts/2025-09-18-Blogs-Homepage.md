@@ -85,22 +85,22 @@ permalink: /homepage-blogs/
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 1 1 150px;
-    min-width: 120px;
-    max-width: 200px;
+    flex: 1 1 220px;
+    min-width: 180px;
+    max-width: 300px;
     box-sizing: border-box;
     background: linear-gradient(45deg, #3b82f6, #9333ea);
     color: #fff;
-    padding: 0.8rem 1.2rem;
+    padding: 1.2rem 2.2rem;
     border-radius: 9999px;
     text-decoration: none;
     font-weight: bold;
     letter-spacing: 1px;
     transition: all 0.3s ease;
     box-shadow: 0 0 20px #6366f1, 0 0 40px #9333ea inset;
-    font-size: 1.05rem;
+    font-size: 1.25rem;
     text-align: center;
-    height: 48px;
+    height: 64px;
   }
   .space-btn:hover {
     transform: translateY(-5px) scale(1.05);
