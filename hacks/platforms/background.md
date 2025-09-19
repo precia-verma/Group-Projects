@@ -21,6 +21,11 @@ permalink: /background
     Homebrew Installation Shop
   </button>
 </a>
+<a href="https://precia-verma.github.io/Group-projects/ruby-gems-installation-shop/" style="text-decoration: none;">
+  <button style="background-color: #a72a26ff; color: #fff7c8ff; padding: 10px 20px; border-radius: 8px; font-weight: bold; border: none; cursor: pointer;">
+   Ruby Gem Installation Shop
+  </button>
+</a>
 
 
 
