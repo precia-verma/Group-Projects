@@ -19,12 +19,16 @@ Your job is to make sure you first have a terminal on your machine. If you're dr
 
 ---
 
+Use the arrow or WASD keys to move your car forward. Go to the shops in order from left to right without skipping any steps (specific for your type of car).
+
+---
+
 Now--your customer has created a list of items to pickup. You will obtain these items and then add them into your terminal:
-1. 1 Homebrew 🍺
+1. 1 Homebrew 🍺 (MacOS car)
 2. Shiny Ruby Gems 💎♦️
 3. 1 Python Snake 🐍
 
 Once you've added all of these into your terminal--it will immediately be delivered to your customer. Good luck!
 
 
-<a href="https://precia-verma.github.io/Group-projects/background" target="_blank" rel="noopener" style="display:inline-block;padding:8px 12px;background:#1f77b4;color:#fff;border-radius:6px;text-decoration:none;font-weight:600;">View Background</a>
+<a href="https://precia-verma.github.io/Group-projects/background" target="_blank" rel="noopener" style="display:inline-block;padding:8px 12px;background:#1f77b4;color:#fff;border-radius:6px;text-decoration:none;font-weight:600;">Start Job Now!</a>
