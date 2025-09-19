@@ -15,8 +15,15 @@ permalink: /background
   <input id="speedRange" type="range" min="1" max="30" value="6" />
   <div id="speedDesc" style="margin-top:6px; font-size:12px; color:#333; max-width:220px;">
     Play around with the speed of the car 😁
-  </div>
-</div>
+
+<a href="/homebrew-installation-shop/" style="text-decoration: none;">
+  <button style="background-color: #f59f00ff; color: #f7f6f8ff; padding: 10px 20px; border-radius: 8px; font-weight: bold; border: none; cursor: pointer;">
+    Homebrew Installation Shop
+  </button>
+</a>
+
+
+
 
 <script>
   // Get the canvas and its drawing context
@@ -90,10 +97,7 @@ permalink: /background
   // Start the player a bit left of center. Change startOffset to move further left/right.
   const startOffset = 500; // pixels to shift left from center (increase to move further left)
   const x = Math.max(0, (gameWorld.width - width) / 2 - startOffset);
-        // Shift the player down from vertical center. Increase startYOffset to move further down.
-        const startYOffset = 120; // pixels to shift down from the computed center+50
-        const yBase = (gameWorld.height - height) / 2 + 50;
-        const y = Math.min(gameWorld.height - height, yBase + startYOffset);
+        const y = (gameWorld.height - height) / 2 + 50;
         super(image, width, height, x, y);
         this.baseY = y;
         this.frame = 0;
