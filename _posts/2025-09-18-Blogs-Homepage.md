@@ -135,7 +135,7 @@ permalink: /homepage-blogs/
 # 🌠 Blogs
 
 <p class="description">
-  <b>This is our Blogs Homepage! We have listed everythign you may need to know in a very fun way! Have lots of fun!</b>
+  <b>This is our Blogs Homepage! We have listed everything you may need to know in a very fun way! Have lots of fun!</b>
 </p>
 
 <div class="button-container">
