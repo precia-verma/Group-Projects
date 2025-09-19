@@ -26,6 +26,11 @@ permalink: /background
    Ruby Gem Installation Shop
   </button>
 </a>
+<a href="https://precia-verma.github.io/Group-projects/python-installation-shop/" style="text-decoration: none;">
+  <button style="background-color: #344e74ff; color: #c7c7c7ff; padding: 10px 20px; border-radius: 8px; font-weight: bold; border: none; cursor: pointer;">
+   Python Installation Shop
+  </button>
+</a>
 
 
 
