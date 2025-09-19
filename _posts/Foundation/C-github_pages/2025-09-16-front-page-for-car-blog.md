@@ -15,8 +15,8 @@ permalink: /front-page/
 #frontpage-card p{color:#d9f3f4;font-size:1.01rem;line-height:1.55}
 #frontpage-card ul, #frontpage-card ol{color:#d9f3f4;margin-left:1.1rem}
 #frontpage-card code, #frontpage-card pre{background:#02242b;color:#e6fbff;padding:10px;border-radius:8px;display:block;overflow:auto}
-.cta-btn{display:inline-block;padding:14px 20px;background:linear-gradient(90deg,#ff7a59,#ff3b6a);color:#fff;border-radius:999px;font-weight:800;text-decoration:none;box-shadow:0 10px 30px rgba(255,59,106,0.22);transition:transform .18s ease,box-shadow .18s ease}
-.cta-btn:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(255,59,106,0.18)}
+.cta-btn{display:inline-block;padding:14px 20px;background:linear-gradient(90deg,#001f54,#b22222);color:#ffffff;border-radius:999px;font-weight:800;text-decoration:none;box-shadow:0 10px 30px rgba(0,0,0,0.12);transition:transform .18s ease,box-shadow .18s ease}
+.cta-btn:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(0,0,0,0.16)}
 details{background:linear-gradient(90deg,#f8fbff,#ffffff);padding:10px;border-radius:10px;margin:8px 0}
 summary{cursor:pointer;font-weight:700;color:#083049}
 #frontpage-meta{display:flex;gap:12px;align-items:center;margin-bottom:14px}
@@ -49,6 +49,8 @@ Now--your customer has created a list of items to pickup. You will obtain these 
 Once you've added all of these into your terminal--it will immediately be delivered to your customer. Good luck!
 
 
-<a href="https://precia-verma.github.io/Group-projects/background" target="_blank" rel="noopener" class="cta-btn">Start Job Now!</a>
-
 </div>
+
+<p style="text-align:center;margin:18px 0 32px;">
+	<a href="https://precia-verma.github.io/Group-projects/background" target="_blank" rel="noopener" class="cta-btn">Start Job Now!</a>
+</p>
