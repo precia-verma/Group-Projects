@@ -5,6 +5,8 @@ date: 2025-09-16
 permalink: /python-installation-shop/
 ---
 
+## Welcome to the Pet Shop! 🐍🐾
+
 <style>
 /* Reused scoped styles from front-page card to strongly restyle this post */
 .cta-btn{display:inline-block;padding:12px 18px;background:linear-gradient(90deg,#0ea5a4,#06b6d4);color:#042226;border-radius:999px;font-weight:800;text-decoration:none;box-shadow:0 10px 30px rgba(6,182,212,0.14);transition:transform .18s ease}
@@ -32,7 +34,6 @@ summary{cursor:pointer;font-weight:700;color:#07202a}
 </style>
 
 <div id="frontpage-card" markdown="1">
-## Welcome to the Pet Shop! 🐍🐾
 
 ---
 
