@@ -9,16 +9,16 @@ permalink: /ruby-gems-installation-shop/
 
 <style>
 /* Reused scoped styles to restyle gem shop post (presentation only) */
-#frontpage-card{max-width:980px;margin:18px auto;padding:26px;border-radius:14px;background:linear-gradient(180deg,#ffffff 0%,#f7fbff 50%,#f0f6ff 100%);box-shadow:0 18px 40px rgba(8,30,54,0.06);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,'Helvetica Neue',Arial;color:#07314a}
-#frontpage-card h2{font-size:2.1rem;margin:0 0 10px;color:#05233a;letter-spacing:-0.5px}
-#frontpage-card hr{border:none;border-top:1px solid rgba(7,49,74,0.06);margin:18px 0}
-#frontpage-card p{color:#1f3b4b;font-size:1.01rem;line-height:1.55}
-#frontpage-card ul, #frontpage-card ol{color:#16323f;margin-left:1.1rem}
-#frontpage-card code, #frontpage-card pre{background:#0b2a3a;color:#e6fbff;padding:10px;border-radius:8px;display:block;overflow:auto}
+#frontpage-card{max-width:980px;margin:18px auto;padding:26px;border-radius:14px;background:linear-gradient(180deg,#043a3a 0%,#07305a 100%);box-shadow:0 18px 40px rgba(2,12,18,0.6);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,'Helvetica Neue',Arial;color:#e6fbff}
+#frontpage-card h2{font-size:2.1rem;margin:0 0 10px;color:#bfeef0;letter-spacing:-0.5px}
+#frontpage-card hr{border:none;border-top:1px solid rgba(255,255,255,0.06);margin:18px 0}
+#frontpage-card p{color:#d9f3f4;font-size:1.01rem;line-height:1.55}
+#frontpage-card ul, #frontpage-card ol{color:#d9f3f4;margin-left:1.1rem}
+#frontpage-card code, #frontpage-card pre{background:#02242b;color:#e6fbff;padding:10px;border-radius:8px;display:block;overflow:auto}
 .cta-btn{display:inline-block;padding:14px 20px;background:linear-gradient(90deg,#ff7a59,#ff3b6a);color:#fff;border-radius:999px;font-weight:800;text-decoration:none;box-shadow:0 10px 30px rgba(255,59,106,0.22);transition:transform .18s ease,box-shadow .18s ease}
 .cta-btn:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(255,59,106,0.18)}
-details{background:linear-gradient(90deg,#f8fbff,#ffffff);padding:10px;border-radius:10px;margin:8px 0}
-summary{cursor:pointer;font-weight:700;color:#083049}
+details{background:linear-gradient(90deg,#0b2a2a,#042737);padding:10px;border-radius:10px;margin:8px 0}
+summary{cursor:pointer;font-weight:700;color:#bfeef0}
 @media (max-width:640px){#frontpage-card{padding:16px}#frontpage-card h2{font-size:1.5rem}}
 </style>
 
