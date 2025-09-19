@@ -42,7 +42,7 @@ Welcome LxD Coders!
         </div>
     </a>
     <a href="https://precia-verma.github.io/Group-projects/front-page/" style="text-decoration: none;">
-          <div style="background-color: #FFEE8C; color: #b19cd8; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+          <div style="background-color: #6bb5a5ff; color: #4b4239ff; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
               Tools Setup Car Game
           </div>
      </a>
