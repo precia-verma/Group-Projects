@@ -73,10 +73,19 @@ permalink: /homepage-blogs/
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1.8rem;
+    gap: 1.2rem;
     margin-bottom: 4rem;
+    width: 100%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
   }
   .space-btn {
+    flex: 1 1 180px;
+    min-width: 140px;
+    max-width: 240px;
+    box-sizing: border-box;
     background: linear-gradient(45deg, #3b82f6, #9333ea);
     color: #fff;
     padding: 0.9rem 1.8rem;
@@ -120,7 +129,7 @@ permalink: /homepage-blogs/
 # 🌠 Blogs
 
 <p class="description">
-  This is our Blogs Homepage! We have listed everythign you may need to know in a very fun way! Have lots of fun!
+  <b>This is our Blogs Homepage! We have listed everythign you may need to know in a very fun way! Have lots of fun!</b>
 </p>
 
 <div class="button-container">
@@ -129,9 +138,8 @@ permalink: /homepage-blogs/
   <a class="space-btn" href="https://precia-verma.github.io/Group-projects/python-installation-shop/" target="_blank">☄️ Pet Shop</a>
   <a class="space-btn" href="https://precia-verma.github.io/Group-projects/homebrew-installation-shop/" target="_blank">🛰️ Brew Shop</a>
   <a class="space-btn" href="https://precia-verma.github.io/Group-projects/trouble-blogs/" target="_blank">🧑‍🚀 Trouble-Shooting Guide</a>
-  <a class="space-btn" href="https://precia-verma.github.io/Group-projects/final-group-review/" target="_blank">🌟 Final Group Review</a>
-  <a class="space-btn" href="https://precia-verma.github.io/Group-projects/blogs-archive/" target="_blank">🪐 Blogs Archive</a>
-  <a class="space-btn" href="https://precia-verma.github.io/Group-projects/fun-space/" target="_blank">🎮 Fun Space</a>
-  <a class="space-btn" href="https://precia-verma.github.io/Group-projects/resources/" target="_blank">📚 Resources</a>
-  <a class="space-btn" href="https://example.com/blog4" target="_blank">🌌 Blog 4</a>
+  <a class="space-btn" href="https://precia-verma.github.io/Group-projects/cookie-clicker-blog" target="_blank">🌟 Cookie-Clicker Blog</a>
+  <a class="space-btn" href="https://precia-verma.github.io/Group-projects/calculator-blog" target="_blank">🪐 Calculator Blog</a>
+  <a class="space-btn" href="https://precia-verma.github.io/Group-projects/tools-blogs" target="_blank">🎮 Tools and Equipment</a>
+  
 </div>
