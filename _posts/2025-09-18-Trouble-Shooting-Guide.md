@@ -1,6 +1,6 @@
 ---
 layout: base
-title: Trouble Shooting Guide
+title: Trouble Shooting Guide 
 permalink: /trouble-blogs/
 ---
 
