@@ -24,9 +24,9 @@ Use the arrow or WASD keys to move your car forward. Go to the shops in order fr
 ---
 
 Now--your customer has created a list of items to pickup. You will obtain these items and then add them into your terminal:
-1. 1 Homebrew 🍺 (MacOS car)
+1. One Homebrew 🍺 (MacOS car)
 2. Shiny Ruby Gems 💎♦️
-3. 1 Python Snake 🐍
+3. One Python Snake 🐍
 
 Once you've added all of these into your terminal--it will immediately be delivered to your customer. Good luck!
 
