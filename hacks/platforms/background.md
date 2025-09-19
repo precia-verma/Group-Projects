@@ -16,7 +16,7 @@ permalink: /background
   <div id="speedDesc" style="margin-top:6px; font-size:12px; color:#333; max-width:220px;">
     Play around with the speed of the car 😁
 
-<a href="/homebrew-installation-shop/" style="text-decoration: none;">
+<a href="2025-09-16-homebrew-installation-shop.md" style="text-decoration: none;">
   <button style="background-color: #f59f00ff; color: #f7f6f8ff; padding: 10px 20px; border-radius: 8px; font-weight: bold; border: none; cursor: pointer;">
     Homebrew Installation Shop
   </button>
