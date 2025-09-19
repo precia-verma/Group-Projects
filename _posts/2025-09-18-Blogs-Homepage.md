@@ -82,6 +82,9 @@ permalink: /homepage-blogs/
     box-sizing: border-box;
   }
   .space-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex: 1 1 150px;
     min-width: 120px;
     max-width: 200px;
@@ -96,6 +99,8 @@ permalink: /homepage-blogs/
     transition: all 0.3s ease;
     box-shadow: 0 0 20px #6366f1, 0 0 40px #9333ea inset;
     font-size: 1.05rem;
+    text-align: center;
+    height: 48px;
   }
   .space-btn:hover {
     transform: translateY(-5px) scale(1.05);
