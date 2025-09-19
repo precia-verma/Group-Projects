@@ -98,7 +98,8 @@ h1, h2, h3 {
 </style>
 
 
-<!-- Twinkling Stars Canvas (placed at end of body for reliability) -->
+<!-- Twinkling Stars Canvas -->
+<canvas id="star-canvas" style="position:fixed;top:0;left:0;width:100vw;height:100vh;pointer-events:none;z-index:-1;"></canvas>
 
 
 <!-- ====== Inline Rocket SVG (no image needed) ====== -->
@@ -112,7 +113,6 @@ h1, h2, h3 {
 <!-- Place canvas and script at the end of the body for reliability -->
 <script>
 // Make rocket cursor follow mouse smoothly (closer, but not instant)
-
 const rocket = document.getElementById('rocket');
 let targetX = window.innerWidth / 2;
 let targetY = window.innerHeight / 2;
@@ -125,7 +125,6 @@ document.addEventListener('mousemove', function(e) {
 });
 
 function animateRocket() {
-  // Lerp closer to cursor (higher factor = closer)
   currentX += (targetX - currentX) * 0.25;
   currentY += (targetY - currentY) * 0.25;
   rocket.style.left = currentX + 'px';
@@ -136,13 +135,10 @@ animateRocket();
 
 // Twinkling stars canvas animation
 window.addEventListener('DOMContentLoaded', function() {
-  // Create and insert the canvas at the end of the body
-  let starCanvas = document.createElement('canvas');
-  starCanvas.id = 'star-canvas';
-  document.body.appendChild(starCanvas);
+  const starCanvas = document.getElementById('star-canvas');
   const ctx = starCanvas.getContext('2d');
   let stars = [];
-  const STAR_COUNT = 120;
+  const STAR_COUNT = 200;
   function resizeCanvas() {
     starCanvas.width = window.innerWidth;
     starCanvas.height = window.innerHeight;
@@ -165,9 +161,9 @@ window.addEventListener('DOMContentLoaded', function() {
       stars.push({
         x: Math.random() * starCanvas.width,
         y: Math.random() * starCanvas.height,
-        r: randomBetween(0.5, 1.7),
-        baseAlpha: randomBetween(0.4, 1),
-        twinkleSpeed: randomBetween(0.005, 0.025),
+        r: randomBetween(1.2, 2.8),
+        baseAlpha: randomBetween(0.7, 1),
+        twinkleSpeed: randomBetween(0.01, 0.035),
         twinklePhase: Math.random() * Math.PI * 2
       });
     }
@@ -179,13 +175,13 @@ window.addEventListener('DOMContentLoaded', function() {
     let t = Date.now() * 0.002;
     for (let star of stars) {
       let twinkle = Math.sin(t * 2 + star.twinklePhase) * 0.5 + 0.5;
-      let alpha = star.baseAlpha * (0.7 + 0.6 * twinkle);
+      let alpha = star.baseAlpha * (0.8 + 0.8 * twinkle);
       ctx.globalAlpha = alpha;
       ctx.beginPath();
       ctx.arc(star.x, star.y, star.r, 0, Math.PI * 2);
       ctx.fillStyle = '#fff';
       ctx.shadowColor = '#a8d8ff';
-      ctx.shadowBlur = 8;
+      ctx.shadowBlur = 16;
       ctx.fill();
       ctx.shadowBlur = 0;
     }
