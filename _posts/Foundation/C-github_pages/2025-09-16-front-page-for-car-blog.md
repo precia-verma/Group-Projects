@@ -15,7 +15,7 @@ permalink: /front-page/
 #frontpage-card p{color:#d9f3f4;font-size:1.01rem;line-height:1.55}
 #frontpage-card ul, #frontpage-card ol{color:#d9f3f4;margin-left:1.1rem}
 #frontpage-card code, #frontpage-card pre{background:#02242b;color:#e6fbff;padding:10px;border-radius:8px;display:block;overflow:auto}
-.cta-btn{display:inline-block;padding:14px 20px;background:linear-gradient(90deg,#9b2b2b,#b02c2c);color:#ffffff;border-radius:999px;font-weight:800;text-decoration:none;box-shadow:0 10px 20px rgba(0,0,0,0.08);transition:transform .18s ease,box-shadow .18s ease}
+.cta-btn{display:inline-block;padding:14px 20px;background:linear-gradient(90deg,#9b2b2b,#b02c2c);color:#ffffff !important;border-radius:999px;font-weight:800;text-decoration:none;box-shadow:0 10px 20px rgba(0,0,0,0.08);transition:transform .18s ease,box-shadow .18s ease}
 .cta-btn:hover{transform:translateY(-3px);box-shadow:0 14px 28px rgba(0,0,0,0.10)}
 details{background:linear-gradient(90deg,#f8fbff,#ffffff);padding:10px;border-radius:10px;margin:8px 0}
 summary{cursor:pointer;font-weight:700;color:#083049}

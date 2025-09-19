@@ -9,15 +9,15 @@ permalink: /python-installation-shop/
 
 <style>
 /* Reused scoped styles from front-page card to strongly restyle this post */
-.cta-btn{display:inline-block;padding:12px 18px;background:linear-gradient(90deg,#001f54,#b22222);color:#ffffff;border-radius:999px;font-weight:800;text-decoration:none;box-shadow:0 10px 30px rgba(0,0,0,0.12);transition:transform .18s ease}
-.cta-btn:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(0,0,0,0.16)}
+.cta-btn{display:inline-block;padding:12px 18px;background:linear-gradient(90deg,#5b8a72,#78b39a);color:#ffffff !important;border-radius:999px;font-weight:800;text-decoration:none;box-shadow:0 8px 18px rgba(0,0,0,0.06);transition:transform .18s ease}
+.cta-btn:hover{transform:translateY(-2px);box-shadow:0 12px 22px rgba(0,0,0,0.08)}
 #frontpage-card h2{font-size:2rem;margin:0 0 8px;color:#081f2a}
 #frontpage-card hr{border:none;border-top:1px solid rgba(9,33,45,0.06);margin:18px 0}
 #frontpage-card p{color:#16323f;font-size:1.02rem;line-height:1.6}
 #frontpage-card ol, #frontpage-card ul{color:#16323f}
 #frontpage-card pre, #frontpage-card code{background:#071e28;color:#dff8ff;padding:12px;border-radius:10px;display:block;overflow:auto}
-.cta-btn{display:inline-block;padding:12px 18px;background:linear-gradient(90deg,#001f54,#b22222);color:#ffffff;border-radius:999px;font-weight:800;text-decoration:none;box-shadow:0 10px 30px rgba(0,0,0,0.12);transition:transform .18s ease}
-.cta-btn:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(0,0,0,0.16)}
+.cta-btn{display:inline-block;padding:12px 18px;background:linear-gradient(90deg,#5b8a72,#78b39a);color:#ffffff !important;border-radius:999px;font-weight:800;text-decoration:none;box-shadow:0 8px 18px rgba(0,0,0,0.06);transition:transform .18s ease}
+.cta-btn:hover{transform:translateY(-2px);box-shadow:0 12px 22px rgba(0,0,0,0.08)}
 @media (max-width:640px){#frontpage-card{padding:16px}#frontpage-card h2{font-size:1.4rem}}
 
 #frontpage-card{max-width:980px;margin:18px auto;padding:26px;border-radius:14px;background:linear-gradient(180deg,#043a3a 0%,#07305a 100%);box-shadow:0 18px 40px rgba(2,12,18,0.6);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,'Helvetica Neue',Arial;color:#e6fbff}
@@ -26,8 +26,8 @@ permalink: /python-installation-shop/
 #frontpage-card p{color:#d9f3f4}
 #frontpage-card ol, #frontpage-card ul{color:#d9f3f4}
 #frontpage-card pre, #frontpage-card code{background:#02242b;color:#e6fbff;padding:12px;border-radius:10px;display:block;overflow:auto}
-.cta-btn{display:inline-block;padding:12px 18px;background:linear-gradient(90deg,#001f54,#b22222);color:#ffffff;border-radius:999px;font-weight:800;text-decoration:none;box-shadow:0 10px 30px rgba(0,0,0,0.12);transition:transform .18s ease}
-.cta-btn:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(0,0,0,0.16)}
+.cta-btn{display:inline-block;padding:12px 18px;background:linear-gradient(90deg,#5b8a72,#78b39a);color:#ffffff !important;border-radius:999px;font-weight:800;text-decoration:none;box-shadow:0 8px 18px rgba(0,0,0,0.06);transition:transform .18s ease}
+.cta-btn:hover{transform:translateY(-2px);box-shadow:0 12px 22px rgba(0,0,0,0.08)}
 details{background:linear-gradient(90deg,#ffffff,#f7fffb);padding:10px;border-radius:10px;margin:8px 0}
 summary{cursor:pointer;font-weight:700;color:#07202a}
 @media (max-width:640px){#frontpage-card{padding:16px}#frontpage-card h2{font-size:1.4rem}}
