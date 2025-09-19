@@ -1,8 +1,8 @@
 ---
-layout: blogs 
+layout: base 
 title: Blogs
 search_exclude: true
-permalink: /blogs/
+permalink: /retro-blogs/
 ---
 
 # Team Retrospective Reflection

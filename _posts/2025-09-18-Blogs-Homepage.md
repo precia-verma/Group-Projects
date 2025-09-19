@@ -73,28 +73,29 @@ permalink: /homepage-blogs/
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1.2rem;
+    gap: 1rem;
     margin-bottom: 4rem;
     width: 100%;
-    max-width: 900px;
+    max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
   }
   .space-btn {
-    flex: 1 1 180px;
-    min-width: 140px;
-    max-width: 240px;
+    flex: 1 1 150px;
+    min-width: 120px;
+    max-width: 200px;
     box-sizing: border-box;
     background: linear-gradient(45deg, #3b82f6, #9333ea);
     color: #fff;
-    padding: 0.9rem 1.8rem;
+    padding: 0.8rem 1.2rem;
     border-radius: 9999px;
     text-decoration: none;
     font-weight: bold;
     letter-spacing: 1px;
     transition: all 0.3s ease;
     box-shadow: 0 0 20px #6366f1, 0 0 40px #9333ea inset;
+    font-size: 1.05rem;
   }
   .space-btn:hover {
     transform: translateY(-5px) scale(1.05);
@@ -139,7 +140,7 @@ permalink: /homepage-blogs/
   <a class="space-btn" href="https://precia-verma.github.io/Group-projects/homebrew-installation-shop/" target="_blank">🛰️ Brew Shop</a>
   <a class="space-btn" href="https://precia-verma.github.io/Group-projects/trouble-blogs/" target="_blank">🧑‍🚀 Trouble-Shooting Guide</a>
   <a class="space-btn" href="https://precia-verma.github.io/Group-projects/cookie-clicker-blog" target="_blank">🌟 Cookie-Clicker Blog</a>
-  <a class="space-btn" href="https://precia-verma.github.io/Group-projects/calculator-blog" target="_blank">🪐 Calculator Blog</a>
-  <a class="space-btn" href="https://precia-verma.github.io/Group-projects/tools-blogs" target="_blank">🎮 Tools and Equipment</a>
-  
+  <a class="space-btn" href="https://precia-verma.github.io/Group-projects/calculator-blog" target="_blank">✨ Calculator Blog</a>
+  <a class="space-btn" href="https://precia-verma.github.io/Group-projects/tools-blogs" target="_blank">🛠️ Tools and Equipment</a>
+  <a class="space-btn" href="https://precia-verma.github.io/Group-projects/retro-blogs/" target="_blank">🤝 Retrospective Blog</a>
 </div>
