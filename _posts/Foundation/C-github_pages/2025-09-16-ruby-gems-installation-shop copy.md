@@ -53,10 +53,6 @@ Congrats! You picked up your customer's shiny ruby gem. Head onto the next butto
 
 # 🎉🎉
 
-</div>
-
-
-
 ---
 
 ### If you're driving a MacOS car, then these steps are for you:
@@ -83,3 +79,5 @@ If they're real gems, then you should be met with the ruby version number, the g
 Congrats! You picked up your customer's shiny ruby gem. Head onto the next button now!
 
 # 🎉🎉
+
+</div>
