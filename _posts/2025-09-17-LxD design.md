@@ -212,41 +212,29 @@ Ready for launch! This page charts every stop on the LxD journey.
 
 ---
 
-<div class="star-card">
-### 🌠 1. Jokes  
-Fun JS jokes inside Jupyter notebooks—practice running JavaScript cells and moving files around GitHub Pages.  
-[Blast off →](https://pages.opencodingsociety.com/github/pages/jokes)
-</div>
+> ### 🌠 1. Jokes  
+> Fun JS jokes inside Jupyter notebooks—practice running JavaScript cells and moving files around GitHub Pages.  
+> [Blast off →](https://pages.opencodingsociety.com/github/pages/jokes)
 
-<div class="star-card">
-### 🪐 2. Anatomy  
-Map of your repo universe: `_posts`, `_layouts`, `_config.yml`—learn how Jekyll assembles sites from stardust.  
-[Orbit here →](https://pages.opencodingsociety.com/github/pages/anatomy)
-</div>
+> ### 🪐 2. Anatomy  
+> Map of your repo universe: `_posts`, `_layouts`, `_config.yml`—learn how Jekyll assembles sites from stardust.  
+> [Orbit here →](https://pages.opencodingsociety.com/github/pages/anatomy)
 
-<div class="star-card">
-### 🌌 3. Theme  
-Swap constellations (themes) with Makefile spells like `make use-minima` and override layouts locally.  
-[Dock here →](https://pages.opencodingsociety.com/github/pages/theme)
-</div>
+> ### 🌌 3. Theme  
+> Swap constellations (themes) with Makefile spells like `make use-minima` and override layouts locally.  
+> [Dock here →](https://pages.opencodingsociety.com/github/pages/theme)
 
-<div class="star-card">
-### ✍️ 4. Markdown  
-Markdown is your star chart—mix HTML, CSS, and images to design planets of content.  
-[Launch pad →](https://pages.opencodingsociety.com/github/pages/markdown)
-</div>
+> ### ✍️ 4. Markdown  
+> Markdown is your star chart—mix HTML, CSS, and images to design planets of content.  
+> [Launch pad →](https://pages.opencodingsociety.com/github/pages/markdown)
 
-<div class="star-card">
-### 🔧 5. Jekyll  
-Master Liquid templates and loops to auto-generate blog universes.  
-[Hyperjump →](https://pages.opencodingsociety.com/github/pages/jekyll)
-</div>
+> ### 🔧 5. Jekyll  
+> Master Liquid templates and loops to auto-generate blog universes.  
+> [Hyperjump →](https://pages.opencodingsociety.com/github/pages/jekyll)
 
-<div class="star-card">
-### 🚀 6. Hacks  
-Apply everything: custom nav, JS in notebooks, Utterances comments—turn theory into a working interstellar station.  
-[Warp speed →](https://pages.opencodingsociety.com/github/pages/hacks)
-</div>
+> ### 🚀 6. Hacks  
+> Apply everything: custom nav, JS in notebooks, Utterances comments—turn theory into a working interstellar station.  
+> [Warp speed →](https://pages.opencodingsociety.com/github/pages/hacks)
 
 ---
 
