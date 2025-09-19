@@ -107,8 +107,9 @@ permalink: /background
     class Player extends GameObject {
       constructor(image, gameWorld) {
         // Scale sprite to half its natural size and center it
-        const width = image.naturalWidth / 1.2;
-        const height = image.naturalHeight / 1.2;
+    const scale = 2; // change this number to tweak size (e.g., 1 = natural, 0.5 = half)
+    const width = image.naturalWidth * scale;
+    const height = image.naturalHeight * scale;
   // Start the player a bit left of center. Change startOffset to move further left/right.
   const startOffset = 500; // pixels to shift left from center (increase to move further left)
   const x = Math.max(0, (gameWorld.width - width) / 2 - startOffset);
