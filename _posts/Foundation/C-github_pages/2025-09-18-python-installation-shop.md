@@ -102,3 +102,7 @@ Congrats! You picked up your customer's python. Head onto the next button now! �
 # 🎉🎉
 
 </div>
+
+<p style="text-align:center;margin:28px 0 60px;">
+	<a class="cta-btn" href="https://precia-verma.github.io/Group-projects/homepage" target="_blank" rel="noopener noreferrer">Next Steps as a New Coder</a>
+</p>
