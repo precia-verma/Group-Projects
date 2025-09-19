@@ -5,7 +5,7 @@ date: 2025-09-16
 permalink: /front-page/
 ---
 
-## You've Been Hired!
+## You've Been Hired! 🚘📃
 
 ---
 
@@ -25,3 +25,6 @@ Now--your customer has created a list of items to pickup. You will obtain these 
 3. 1 Python Snake 🐍
 
 Once you've added all of these into your terminal--it will immediately be delivered to your customer. Good luck!
+
+
+<a href="https://precia-verma.github.io/Group-projects/background" target="_blank" rel="noopener" style="display:inline-block;padding:8px 12px;background:#1f77b4;color:#fff;border-radius:6px;text-decoration:none;font-weight:600;">View Background</a>
