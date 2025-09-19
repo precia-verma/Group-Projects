@@ -16,20 +16,20 @@ permalink: /background
   <div id="speedDesc" style="margin-top:6px; font-size:12px; color:#333; max-width:220px;">
     Play around with the speed of the car 😁
 
-<a href="https://precia-verma.github.io/Group-projects/homebrew-installation-shop/" style="text-decoration: none; position: absolute; top: 190px; left: 240px;">
+<a href="https://precia-verma.github.io/Group-projects/homebrew-installation-shop/" style="text-decoration: none; position: absolute; top: 2000px; left: 240px;">
 <button style="background-color: #f59f00ff; color: #f7f6f8ff; padding: 3.5px 20px; border-radius: 8px; font-weight: bold; border: none; cursor: pointer;">
     Homebrew Installation Shop
   </button>
 </a>
-<a href="https://precia-verma.github.io/Group-projects/ruby-gems-installation-shop/" style="text-decoration: none; position: absolute; top: 185px; left: 510px;">
+<a href="https://precia-verma.github.io/Group-projects/ruby-gems-installation-shop/" style="text-decoration: none; position: absolute; top: 200px; left: 510px;">
   <button style="background-color: #a72a26ff; color: #fff7c8ff; padding: 2px 20px; border-radius: 8px; font-weight: bold; border: none; cursor: pointer;">
    Ruby Gem Installation Shop
   </button>
 </a>
   <a href="https://precia-verma.github.io/Group-projects/python-installation-shop/" 
-     style="text-decoration: none; position: absolute; top: 210px; left: 815px;">
+     style="text-decoration: none; position: absolute; top: 220px; left: 815px;">
     <button style="background-color: #344e74ff; color: #c7c7c7ff; 
-                   padding: 3.5px 20px; border-radius: 8px; 
+                   padding: 3px 20px; border-radius: 8px; 
                    font-weight: bold; border: none; cursor: pointer;">
       Python Installation Shop
     </button>
