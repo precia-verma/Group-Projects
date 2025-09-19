@@ -83,5 +83,5 @@ Congrats! You picked up your customer's shiny ruby gem. Head onto the next butto
 </div>
 
 <p style="text-align:center;margin:18px 0 32px;">
-	<a href="https://precia-verma.github.io/Group-projects/background" target="_blank" rel="noopener" class="cta-btn">Start Job Now!</a>
+	<a href="https://precia-verma.github.io/Group-projects/background" target="_blank" rel="noopener" class="cta-btn">Leave Shop</a>
 </p>
