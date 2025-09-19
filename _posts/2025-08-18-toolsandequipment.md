@@ -11,6 +11,20 @@ body {
   color: #f0f8ff;
   font-family: "Orbitron", sans-serif;
   line-height: 1.7;
+  overflow-x: hidden;
+}
+.star {
+  position: fixed;
+  border-radius: 50%;
+  background: white;
+  opacity: 0.7;
+  z-index: 0;
+  pointer-events: none;
+  animation: twinkle 3s infinite alternate;
+}
+@keyframes twinkle {
+  0% {opacity: 0.3;}
+  100% {opacity: 1;}
 }
 a {
   color: #7fffd4;
@@ -26,6 +40,27 @@ h1, h2 {
   text-shadow: 0 0 10px #7fffd4;
 }
 </style>
+
+<!-- Star layers -->
+<div id="star-layer"></div>
+<script>
+// Sprinkle stars in the background
+(function() {
+  const layer = document.getElementById('star-layer');
+  for (let i = 0; i < 80; i++) {
+    const s = document.createElement('div');
+    s.className = 'star';
+    const size = Math.random() * 2 + 1;
+    s.style.width = size + 'px';
+    s.style.height = size + 'px';
+    s.style.top = Math.random() * 100 + 'vh';
+    s.style.left = Math.random() * 100 + 'vw';
+    s.style.animationDuration = (2 + Math.random() * 3) + 's';
+    s.style.animationDelay = (Math.random() * 3) + 's';
+    layer.appendChild(s);
+  }
+})();
+</script>
 
 # 🚀 Tools and Equipment
 
