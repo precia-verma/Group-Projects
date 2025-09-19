@@ -22,7 +22,7 @@ permalink: /background
   </button>
 </a>
 <a href="https://precia-verma.github.io/Group-projects/ruby-gems-installation-shop/" style="text-decoration: none; position: absolute; top: 220px; left: 510px;">
-  <button style="background-color: #a72a26ff; color: #fff7c8ff; padding: 2px 20px; border-radius: 8px; font-weight: bold; border: none; cursor: pointer;">
+  <button style="background-color: #a72a26ff; color: #faf2c4ff; padding: 2px 20px; border-radius: 8px; font-weight: bold; border: none; cursor: pointer;">
    The Ruby Gem Shop
   </button>
 </a>
